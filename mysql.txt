@@ -1,0 +1,27 @@
+=======TEST DATA========
+
+INSERT INTO user (username, user_password, user_type) VALUES ('samson', 'lorppa', 'master');
+INSERT INTO user (username, user_password, user_type) VALUES ('niina', 'niina', 'admin');
+INSERT INTO user (username, user_password) VALUES ('riku', 'riku');
+INSERT INTO pc (pc_name, user_id) VALUES ('Terminator', 1);
+INSERT INTO pc (pc_name, user_id) VALUES ('Olaf', 1);
+INSERT INTO pc (pc_name, user_id) VALUES ('MacBook Air', 2);
+INSERT INTO pc (pc_name, user_id) VALUES ('PornMachine', 3);
+INSERT INTO component_type (component_type_name) VALUES ('GPU');
+INSERT INTO component_type (component_type_name) VALUES ('CPU');
+INSERT INTO component_type (component_type_name) VALUES ('PSU');
+INSERT INTO component_type (component_type_name) VALUES ('RAM');
+INSERT INTO component_type (component_type_name) VALUES ('HDD');
+INSERT INTO component_type (component_type_name) VALUES ('SSD');
+INSERT INTO component_type (component_type_name) VALUES ('M.2');
+INSERT INTO component_type (component_type_name) VALUES ('Optical Drive');
+INSERT INTO component_type (component_type_name) VALUES ('Motherboard');
+INSERT INTO component_type (component_type_name) VALUES ('OS');
+INSERT INTO component (component_name, component_brand, component_purchase_date, component_type_id, pc_id) VALUES ('Ryzen 5 3600', 'AMD', CURRENT_TIMESTAMP, 2, 1);
+INSERT INTO component (component_name, component_brand, component_purchase_date, component_type_id, pc_id) VALUES ('GeForce GTX 1070 8Gb', 'ASUS', CURRENT_TIMESTAMP, 1, 1);
+INSERT INTO component (component_name, component_brand, component_purchase_date, component_type_id, pc_id) VALUES ('2 x 8Gb', 'HyperX', CURRENT_TIMESTAMP, 4, 1);
+INSERT INTO component (component_name, component_brand, component_purchase_date, component_type_id, pc_id) VALUES ('2Tb SATA-II 3Gb/s', 'Western Digital', CURRENT_TIMESTAMP, 5, 1);
+INSERT INTO component (component_name, component_brand, component_purchase_date, component_type_id, pc_id) VALUES ('256Gb SATA-III 6Gb/s', 'Crucial', CURRENT_TIMESTAMP, 6, 1);
+INSERT INTO component (component_name, component_brand, component_purchase_date, component_type_id, pc_id) VALUES ('128Gb 840 Pro 6Gb/s', 'Samsung', CURRENT_TIMESTAMP, 6, 1);
+INSERT INTO component (component_name, component_brand, component_purchase_date, component_type_id, pc_id) VALUES ('Prime X570-PRO (AM4)', 'Asus', CURRENT_TIMESTAMP, 9, 1);
+INSERT INTO component (component_name, component_brand, component_purchase_date, component_type_id, pc_id) VALUES ('Windows 10 Pro 64-bit', 'Microsoft', CURRENT_TIMESTAMP, 10, 1);
